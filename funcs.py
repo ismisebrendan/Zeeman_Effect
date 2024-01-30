@@ -80,6 +80,10 @@ def rad_err(peaksl, errorsl, peaksr, errorsr):
         
     return radii_arr, error_arr
 
+# Find the error in the radius squared
+def rad_sqd_err(radii, errors):
+    return np.abs(2 * radii * errors)
+
 # Find the change in radius
 def delta_rad(radius0, errors0, radius_new, errors_new):
     del_radius = np.array([])
