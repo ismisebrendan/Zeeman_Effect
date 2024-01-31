@@ -37,14 +37,14 @@ plt.show()
 plt.plot(pixels, intensity1)
 plt.xlabel('p')
 plt.ylabel('I (%)')
-plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic field present - Exposure = 6 only')
+plt.title('Graph of intensity (I) recorded for each pixel (p) with no\nmagnetic field present - Exposure = 6 only')
 plt.show()
 
 # Second recording
 plt.plot(pixels, intensity2)
 plt.xlabel('p')
 plt.ylabel('I (%)')
-plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic field present - Exposure = 8 only')
+plt.title('Graph of intensity (I) recorded for each pixel (p) with no\nmagnetic field present - Exposure = 8 only')
 plt.show()
 
 #####################################
@@ -85,7 +85,7 @@ errorsr = [errorsr1, errorsr2, errorsr3, errorsr4, errorsr5, errorsr6, errorsr7,
 # Plot data and peaks
 plot_peaks(pixels, intensity1, peaksl, pixelsl, peaksr, pixelsr, 60)
 
-plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic field present with peaks fit - Exposure = 6 on 8 November only')
+plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic\nfield present with peaks fit - Exposure = 6 on 8 November only')
 plt.show()
 
 # Calculate radii, errors and plot
@@ -104,7 +104,6 @@ error_arr = rad_sqd_err(radii_arr, error_arr)
 
 plt.scatter(m, radii_arr**2, label='$r_m^2$')
 plt.errorbar(m, fit.intercept + fit.slope*m, yerr=error_arr, color='red', label='Fit')
-print(error_arr)
 plt.xlabel('m')
 plt.ylabel('$r_m^2$ ($m^2$)')
 plt.plot([], [], ' ', label='R$^2$='+str(np.round(fit.rvalue, 6)))
@@ -165,7 +164,7 @@ errorsr = [errorsr1, errorsr2, errorsr3, errorsr4, errorsr5, errorsr6, errorsr7,
 # Plot data and peaks
 
 plot_peaks(pixels, intensity2, peaksl, pixelsl, peaksr, pixelsr, 60)
-plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic field present with peaks fit - Exposure = 8 on 8 November only')
+plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic\nfield present with peaks fit - Exposure = 8 on 8 November only')
 plt.show()
 
 # Calculate radii, errors and plot
@@ -229,28 +228,28 @@ plt.show()
 plt.plot(pixels, intensity1)
 plt.xlabel('p')
 plt.ylabel('I (%)')
-plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic field present - first recording on 15 November only')
+plt.title('Graph of intensity (I) recorded for each pixel (p) with no\nmagnetic field present - first recording on 15 November only')
 plt.show()
 
 # Second recording
 plt.plot(pixels, intensity2)
 plt.xlabel('p')
 plt.ylabel('I (%)')
-plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic field present - second recording on 15 November only')
+plt.title('Graph of intensity (I) recorded for each pixel (p) with no\nmagnetic field present - second recording on 15 November only')
 plt.show()
 
 # Third recording
 plt.plot(pixels, intensity3)
 plt.xlabel('p')
 plt.ylabel('I (%)')
-plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic field present - third recording on 15 November only')
+plt.title('Graph of intensity (I) recorded for each pixel (p) with no\nmagnetic field present - third recording on 15 November only')
 plt.show()
 
 # Fourth recording
 plt.plot(pixels, intensity4)
 plt.xlabel('p')
 plt.ylabel('I (%)')
-plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic field present - fourth recording on 15 November only')
+plt.title('Graph of intensity (I) recorded for each pixel (p) with no\nmagnetic field present - fourth recording on 15 November only')
 plt.show()
 
 #####################################
@@ -291,7 +290,7 @@ errorsr = [errorsr1, errorsr2, errorsr3, errorsr4, errorsr5, errorsr6, errorsr7,
 # Plot data and peaks
 plot_peaks(pixels, intensity1, peaksl, pixelsl, peaksr, pixelsr, 40)
 
-plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic field present with peaks fit - first recording on 15 November only')
+plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic\nfield present with peaks fit - first recording on 15 November only')
 plt.show()
 
 # Calculate radii, errors and plot
@@ -438,7 +437,7 @@ errorsr = [errorsr1, errorsr2, errorsr3, errorsr4, errorsr5, errorsr6, errorsr7,
 # Plot data and peaks
 plot_peaks(pixels, intensity3, peaksl, pixelsl, peaksr, pixelsr, 40)
 
-plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic field present with peaks fit - third recording on 15 November only')
+plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic\nfield present with peaks fit - third recording on 15 November only')
 plt.show()
 
 # Calculate radii, errors and plot
@@ -513,7 +512,7 @@ errorsr = [errorsr1, errorsr2, errorsr3, errorsr4, errorsr5, errorsr6, errorsr7,
 # Plot data and peaks
 plot_peaks(pixels, intensity4, peaksl, pixelsl, peaksr, pixelsr, 60, 3)
 
-plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic field present with peaks fit - fourth recording on 15 November only')
+plt.title('Graph of intensity (I) recorded for each pixel (p) with no magnetic\nfield present with peaks fit - fourth recording on 15 November only')
 plt.show()
 
 # Calculate radii, errors and plot
